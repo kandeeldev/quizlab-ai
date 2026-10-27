@@ -1,0 +1,434 @@
+[
+  {
+    "id": "py-easy-01",
+    "question": "Which keyword defines a function in Python?",
+    "options": ["func", "def", "function", "lambda"],
+    "correctAnswerIndex": 1,
+    "explanation": "The def keyword starts a named function definition. Lambda creates an anonymous function expression, but it does not replace def for ordinary named functions.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-02",
+    "question": "Which data type stores an ordered, mutable collection of values?",
+    "options": ["tuple", "set", "list", "frozenset"],
+    "correctAnswerIndex": 2,
+    "explanation": "A list preserves order and can be changed after creation. Tuples preserve order too, but are immutable.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-03",
+    "question": "What does len(['a', 'b', 'c']) return?",
+    "options": ["3", "2", "4", "None"],
+    "correctAnswerIndex": 0,
+    "explanation": "The list contains three elements, so len returns the integer 3.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-04",
+    "question": "Which symbol starts a single-line comment in Python?",
+    "options": ["//", "--", "/*", "#"],
+    "correctAnswerIndex": 3,
+    "explanation": "Python uses the hash character to begin a comment that continues to the end of the line.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-05",
+    "question": "What value does bool(0) return?",
+    "options": ["True", "False", "0", "None"],
+    "correctAnswerIndex": 1,
+    "explanation": "The integer zero is a falsy value in Python, so converting it with bool produces False.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-06",
+    "question": "Which method adds one item to the end of a list?",
+    "options": ["extend", "insert", "append", "push"],
+    "correctAnswerIndex": 2,
+    "explanation": "list.append(item) adds the item as one new element at the end of the list. Python lists do not have a built-in push method.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-07",
+    "question": "What type of value does input() return by default?",
+    "options": ["A string", "An integer", "A Boolean", "A list"],
+    "correctAnswerIndex": 0,
+    "explanation": "input reads text from the user and returns it as a string. The string can be converted to another type explicitly, such as with int().",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-08",
+    "question": "Which operator performs exponentiation in Python?",
+    "options": ["^", "//", "%%", "**"],
+    "correctAnswerIndex": 3,
+    "explanation": "The double-asterisk operator raises its left operand to the power of its right operand, such as 2 ** 3, which equals 8.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-09",
+    "question": "What does the expression 7 // 2 evaluate to?",
+    "options": ["3.5", "4", "3", "1"],
+    "correctAnswerIndex": 2,
+    "explanation": "The // operator performs floor division. Seven divided by two is 3.5, and flooring that result gives 3.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-10",
+    "question": "Which collection stores unique, unordered elements?",
+    "options": ["list", "set", "tuple", "string"],
+    "correctAnswerIndex": 1,
+    "explanation": "A set contains unique elements and is designed for unordered membership operations. Duplicate values are removed when a set is created.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-11",
+    "question": "Which built-in function returns the largest item in an iterable?",
+    "options": ["top", "largest", "upper", "max"],
+    "correctAnswerIndex": 3,
+    "explanation": "The max function returns the largest item according to the values or ordering of the iterable.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-12",
+    "question": "Which statement conditionally executes code when a condition is true?",
+    "options": ["if", "when", "case", "check"],
+    "correctAnswerIndex": 0,
+    "explanation": "Python uses the if statement to run an indented block when its condition evaluates to a truthy value.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-13",
+    "question": "What is the result of 'Py' + 'thon'?",
+    "options": ["Py thon", "['Py', 'thon']", "Python", "An error"],
+    "correctAnswerIndex": 2,
+    "explanation": "The + operator concatenates two strings, so the result is the single string Python.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-14",
+    "question": "Which keyword exits a loop immediately?",
+    "options": ["stop", "break", "exit-loop", "return-loop"],
+    "correctAnswerIndex": 1,
+    "explanation": "The break statement ends the nearest enclosing loop immediately and continues execution after that loop.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-15",
+    "question": "Which built-in function creates a sequence of integers commonly used in loops?",
+    "options": ["range", "sequence", "count", "numbers"],
+    "correctAnswerIndex": 0,
+    "explanation": "range creates an immutable range object representing an arithmetic progression of integers, often used by for loops.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-16",
+    "question": "Which value represents the absence of a value in Python?",
+    "options": ["empty", "void", "Null", "None"],
+    "correctAnswerIndex": 3,
+    "explanation": "None is Python's singleton value for representing no value or an absent result. It is distinct from an empty string, zero, or False.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-17",
+    "question": "Which method removes and returns the last item of a list by default?",
+    "options": ["delete", "pop", "remove", "discard"],
+    "correctAnswerIndex": 1,
+    "explanation": "list.pop() removes and returns the last element unless an index is supplied. remove instead deletes the first matching value and returns None.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-easy-18",
+    "question": "Which keyword starts a loop that iterates over items in an iterable?",
+    "options": ["loop", "each", "for", "iterate"],
+    "correctAnswerIndex": 2,
+    "explanation": "The for statement assigns each item from an iterable to a loop variable and executes the indented body for each item.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "py-medium-01",
+    "question": "What does a dictionary comprehension create?",
+    "options": ["A sorted dictionary in place", "A new dictionary from an expression over an iterable", "An immutable dictionary", "A dictionary with string-only keys"],
+    "correctAnswerIndex": 1,
+    "explanation": "A dictionary comprehension builds a new dictionary by evaluating a key-value expression for each item in an iterable, optionally with a condition.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-02",
+    "question": "Why is a default list argument such as items=[] usually avoided in a Python function?",
+    "options": ["Lists cannot be passed to functions", "The list is recreated on every call", "The same mutable list is reused across calls", "Python converts it to a tuple"],
+    "correctAnswerIndex": 2,
+    "explanation": "Default argument expressions are evaluated once when the function is defined. A mutable default can therefore retain changes between calls.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-03",
+    "question": "What does [x * 2 for x in range(3)] produce?",
+    "options": ["[0, 1, 2]", "[2, 4, 6]", "[0, 2, 4]", "[1, 2, 3]"],
+    "correctAnswerIndex": 2,
+    "explanation": "range(3) yields 0, 1, and 2. Doubling each value produces the list [0, 2, 4].",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-04",
+    "question": "What is the key difference between == and is?",
+    "options": ["== compares values, while is checks object identity", "== checks identity, while is compares values", "They are always interchangeable", "is can only compare strings"],
+    "correctAnswerIndex": 0,
+    "explanation": "The == operator tests whether two objects compare equal in value. The is operator tests whether two references point to the same object.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-05",
+    "question": "What is the purpose of a try and except statement?",
+    "options": ["To define a class", "To repeat a loop", "To handle selected exceptions", "To import a package"],
+    "correctAnswerIndex": 2,
+    "explanation": "Code in try is attempted, and a matching except block can handle an exception raised by that code instead of allowing it to terminate the program.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-06",
+    "question": "What does enumerate(items) provide when iterating over items?",
+    "options": ["Only sorted items", "Pairs containing an index and an item", "A copy of the list", "Only duplicate items"],
+    "correctAnswerIndex": 1,
+    "explanation": "enumerate yields pairs of an incrementing index and the corresponding item, which avoids manually maintaining a counter in many loops.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-07",
+    "question": "What does *args collect in a function definition?",
+    "options": ["Extra positional arguments", "Extra keyword arguments", "Only the first argument", "All local variables"],
+    "correctAnswerIndex": 0,
+    "explanation": "A parameter written as *args collects any additional positional arguments into a tuple inside the function.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-08",
+    "question": "What does **kwargs collect in a function definition?",
+    "options": ["Extra positional arguments", "Only default values", "A list of return values", "Extra keyword arguments"],
+    "correctAnswerIndex": 3,
+    "explanation": "A parameter written as **kwargs collects additional keyword arguments into a dictionary mapping argument names to values.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-09",
+    "question": "What does the with statement commonly manage?",
+    "options": ["Object identity", "A context that needs setup and cleanup", "Only numeric conversion", "Function annotations"],
+    "correctAnswerIndex": 1,
+    "explanation": "The with statement uses a context manager to perform setup and guaranteed cleanup, such as closing a file after its block finishes.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-10",
+    "question": "What does sorted(values) return?",
+    "options": ["A new sorted list", "The original iterable sorted in place", "A set of sorted values", "A Boolean indicating sortedness"],
+    "correctAnswerIndex": 0,
+    "explanation": "sorted returns a new list containing the iterable's items in sorted order. It does not mutate the original iterable.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-11",
+    "question": "What does list slicing values[1:4] include?",
+    "options": ["Indexes 1, 2, 3, and 4", "Only index 4", "Indexes 0, 1, 2, and 3", "Indexes 1, 2, and 3"],
+    "correctAnswerIndex": 3,
+    "explanation": "Python slices include the start index and exclude the stop index, so values[1:4] includes indexes 1, 2, and 3.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-12",
+    "question": "What is the result of using dict.get('key', default) when 'key' is absent?",
+    "options": ["It returns default", "It always raises KeyError", "It inserts key with an empty string", "It returns the first dictionary key"],
+    "correctAnswerIndex": 0,
+    "explanation": "dict.get returns the value for an existing key, or the supplied default when the key is absent, without raising KeyError.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-13",
+    "question": "What does a lambda expression produce?",
+    "options": ["A module", "A class instance", "A function object", "A generator every time"],
+    "correctAnswerIndex": 2,
+    "explanation": "A lambda expression creates a function object from a single expression. It is useful for short callbacks and key functions.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-14",
+    "question": "What does a class method receive as its first conventional parameter?",
+    "options": ["self", "cls", "this", "class_instance"],
+    "correctAnswerIndex": 1,
+    "explanation": "A method decorated with @classmethod receives the class as its first argument, conventionally named cls. An ordinary instance method conventionally receives self.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-15",
+    "question": "What is the main effect of calling copy.copy on a nested list?",
+    "options": ["It creates a shallow copy of the outer list", "It recursively copies every nested object", "It converts the list to a tuple", "It sorts all nested values"],
+    "correctAnswerIndex": 0,
+    "explanation": "copy.copy creates a shallow copy: the outer container is new, but references to nested objects are shared. copy.deepcopy recursively copies nested objects.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-16",
+    "question": "What does the else block of a loop run when the loop completes normally?",
+    "options": ["It runs before the first iteration", "It runs only when break is used", "It runs after the loop unless break ended it", "It runs once for every iteration"],
+    "correctAnswerIndex": 2,
+    "explanation": "A loop's else block executes when the loop finishes without encountering break. It is skipped when break exits the loop.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-17",
+    "question": "What does the @property decorator allow a method to act like?",
+    "options": ["A module import", "An attribute accessed without parentheses", "A static variable in every class", "A generator expression"],
+    "correctAnswerIndex": 1,
+    "explanation": "@property exposes a method through attribute-style access, allowing computed or validated values to be read like attributes.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-medium-18",
+    "question": "Which statement about Python strings is correct?",
+    "options": ["Strings are mutable sequences", "Strings can only contain ASCII", "Strings are immutable sequences of Unicode characters", "Strings cannot be indexed"],
+    "correctAnswerIndex": 2,
+    "explanation": "Python strings are immutable sequences and support Unicode text. Operations that appear to change a string create a new string instead.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "py-hard-01",
+    "question": "Which statement about Python generators is correct?",
+    "options": ["They eagerly materialize every value", "They use yield to produce values lazily", "They can only yield strings", "They always run faster than lists"],
+    "correctAnswerIndex": 1,
+    "explanation": "A generator function uses yield and produces values on demand, which can reduce memory use for large or streaming sequences.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-02",
+    "question": "What does a decorator generally do in Python?",
+    "options": ["It changes indentation rules", "It converts code to bytecode at runtime", "It deletes a function after use", "It wraps or modifies a callable"],
+    "correctAnswerIndex": 3,
+    "explanation": "A decorator is a callable that takes another callable and returns a replacement or enhanced callable, commonly using @ syntax.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-03",
+    "question": "What is the purpose of if __name__ == '__main__': in a Python module?",
+    "options": ["It checks whether the module is executed as the entry script", "It runs the module only when imported", "It renames the module", "It enables multiprocessing automatically"],
+    "correctAnswerIndex": 0,
+    "explanation": "When Python runs a file directly, its __name__ is '__main__'. The guard lets code run in that case without running during import.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-04",
+    "question": "What is the method resolution order (MRO) used for?",
+    "options": ["To sort a list of methods alphabetically", "To determine the order used to find attributes and methods in inheritance", "To measure function execution time", "To convert a class into a dataclass"],
+    "correctAnswerIndex": 1,
+    "explanation": "Python's MRO defines the order in which a class and its base classes are searched for attributes and methods, including under multiple inheritance.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-05",
+    "question": "What does the Global Interpreter Lock (GIL) in standard CPython primarily affect?",
+    "options": ["Whether Python supports functions", "Whether files can be opened", "Execution of Python bytecode by multiple threads at the same time", "Whether lists preserve order"],
+    "correctAnswerIndex": 2,
+    "explanation": "The CPython GIL allows only one thread at a time to execute Python bytecode within a process, which limits CPU-bound parallelism using threads, though I/O-bound threads can still overlap.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-06",
+    "question": "What is the main purpose of functools.lru_cache?",
+    "options": ["To cache results of function calls", "To make every function asynchronous", "To serialize objects as JSON", "To remove function arguments"],
+    "correctAnswerIndex": 0,
+    "explanation": "functools.lru_cache memoizes calls to a function, reusing recent results for the same hashable arguments and avoiding repeated work.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-07",
+    "question": "What is a context manager's __exit__ method responsible for?",
+    "options": ["Creating the Python interpreter", "Running before __enter__", "Defining every class attribute", "Handling cleanup after the with block"],
+    "correctAnswerIndex": 3,
+    "explanation": "A context manager's __exit__ method runs when a with block leaves, whether normally or because of an exception, so it can release resources and optionally handle exceptions.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-08",
+    "question": "Why is functools.wraps commonly used inside a decorator?",
+    "options": ["It preserves metadata from the wrapped function", "It forces recursion", "It converts a function to a class", "It disables exceptions"],
+    "correctAnswerIndex": 0,
+    "explanation": "functools.wraps copies useful metadata such as __name__ and __doc__ from the wrapped function to the wrapper, improving introspection and documentation.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-09",
+    "question": "What does the yield from expression do in a generator?",
+    "options": ["It stops all generators permanently", "It delegates iteration to another iterable or generator", "It converts values to strings", "It creates a new thread"],
+    "correctAnswerIndex": 1,
+    "explanation": "yield from delegates yielding values to another iterable or generator and can also propagate values and exceptions between nested generators.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-10",
+    "question": "What does __slots__ primarily control in a class?",
+    "options": ["The order of imports", "The number of methods that can be called", "The allowed instance attributes and often instance storage layout", "The class's inheritance depth"],
+    "correctAnswerIndex": 2,
+    "explanation": "__slots__ declares a fixed set of allowed instance attributes and can avoid the per-instance __dict__, often reducing memory use. It does not by itself limit methods or inheritance depth.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-11",
+    "question": "What is the key distinction between an iterable and an iterator?",
+    "options": ["An iterator has __next__ and returns itself from __iter__", "An iterable must always be a list", "An iterator cannot be used in a for loop", "They are unrelated concepts"],
+    "correctAnswerIndex": 0,
+    "explanation": "An iterable can produce an iterator through __iter__. An iterator implements __next__ to return successive values and normally returns itself from __iter__.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-12",
+    "question": "What does an async def function return when called?",
+    "options": ["A completed value immediately", "A coroutine object", "A thread object", "A compiled module"],
+    "correctAnswerIndex": 1,
+    "explanation": "Calling an async def function creates a coroutine object. The coroutine runs when it is awaited or scheduled on an event loop.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-13",
+    "question": "What is the purpose of the await keyword?",
+    "options": ["To pause a coroutine until an awaitable completes", "To create a synchronous loop", "To import a package lazily", "To convert a list to an iterator"],
+    "correctAnswerIndex": 0,
+    "explanation": "await suspends the current coroutine until an awaitable completes, allowing the event loop to run other work during that wait.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-14",
+    "question": "Which statement about Python exception chaining is correct?",
+    "options": ["It is only available for syntax errors", "It prevents all exceptions from propagating", "raise ... from ... can record an explicit cause", "It converts exceptions into warnings"],
+    "correctAnswerIndex": 2,
+    "explanation": "The raise new_exception from original_exception syntax records an explicit cause, preserving the relationship between the higher-level error and the original failure.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-15",
+    "question": "Why can mutable class attributes be risky?",
+    "options": ["They cannot be accessed by instances", "They are shared by instances unless shadowed", "They are always copied deeply", "They can only store numbers"],
+    "correctAnswerIndex": 1,
+    "explanation": "A mutable attribute defined on the class is shared through the class and its instances until an instance assigns its own attribute, so one instance can affect another unexpectedly.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-16",
+    "question": "What does pickle provide in Python?",
+    "options": ["A secure format for untrusted input", "A way to compile Python to machine code", "Object serialization for Python-specific data", "A database transaction system"],
+    "correctAnswerIndex": 2,
+    "explanation": "The pickle module serializes many Python objects into a Python-specific byte stream and can reconstruct them later. Untrusted pickle data must not be loaded because deserialization can execute code.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-17",
+    "question": "What does the descriptor protocol allow an object to customize?",
+    "options": ["Only module imports", "Attribute access through methods such as __get__", "The operating system scheduler", "The number of Python keywords"],
+    "correctAnswerIndex": 1,
+    "explanation": "Objects implementing methods such as __get__, __set__, or __delete__ can control attribute access when used as descriptors, which powers properties and many framework APIs.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "py-hard-18",
+    "question": "Why should a CPU-bound workload generally use multiprocessing rather than relying only on CPython threads for parallelism?",
+    "options": ["Processes can bypass the single-process GIL limitation", "Threads cannot call functions", "Processes always share memory more safely", "The GIL affects only file I/O"],
+    "correctAnswerIndex": 0,
+    "explanation": "Separate processes have separate Python interpreters and can execute CPU-bound Python bytecode in parallel across cores, avoiding the main CPython GIL limitation within one process.",
+    "difficulty": "Hard"
+  }
+]

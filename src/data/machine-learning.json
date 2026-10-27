@@ -1,0 +1,434 @@
+[
+  {
+    "id": "ml-easy-01",
+    "question": "What distinguishes supervised learning from unsupervised learning?",
+    "options": ["Supervised learning uses labeled examples with a target to learn from", "Supervised learning never uses numeric data", "Supervised learning always uses neural networks", "Supervised learning cannot make predictions"],
+    "correctAnswerIndex": 0,
+    "explanation": "Supervised learning trains from examples that include known target values or labels. The model learns a relationship that can be used to predict targets for new inputs.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-02",
+    "question": "What is a common goal of unsupervised learning?",
+    "options": ["Predict a provided target label", "Find structure or patterns without target labels", "Guarantee a causal explanation", "Replace the need for data"],
+    "correctAnswerIndex": 1,
+    "explanation": "Unsupervised methods analyze inputs without a supplied target, often seeking clusters, lower-dimensional structure, or other patterns.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-03",
+    "question": "Which task is a regression problem?",
+    "options": ["Predict whether an email is spam", "Group customers without labels", "Predict the selling price of a house", "Choose one of three named classes"],
+    "correctAnswerIndex": 2,
+    "explanation": "House price is a continuous numeric target, so predicting it is a regression task. Classification instead predicts discrete categories.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-04",
+    "question": "Which task is a classification problem?",
+    "options": ["Predict tomorrow's temperature", "Estimate a person's annual income", "Group unlabeled articles by similarity", "Predict whether a transaction is fraudulent"],
+    "correctAnswerIndex": 3,
+    "explanation": "Fraud detection predicts a discrete label such as fraudulent or not fraudulent, making it a classification problem.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-05",
+    "question": "What is the primary purpose of a training set?",
+    "options": ["Fit the model's parameters", "Provide the final unbiased score only", "Replace all validation data", "Store deployment credentials"],
+    "correctAnswerIndex": 0,
+    "explanation": "The training set is used by the learning algorithm to estimate the model parameters from examples.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-06",
+    "question": "What is the primary purpose of a test set?",
+    "options": ["Tune every hyperparameter repeatedly", "Estimate performance on unseen data after model selection", "Increase the number of training labels", "Define the model's feature names"],
+    "correctAnswerIndex": 1,
+    "explanation": "A held-out test set provides a final estimate of how the selected model may perform on new data. It should not be repeatedly used to make modeling choices.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-07",
+    "question": "What is overfitting?",
+    "options": ["A model that cannot represent any pattern", "A model that has no training data", "A model that fits training details but generalizes poorly", "A model that always has low training error and low test error"],
+    "correctAnswerIndex": 2,
+    "explanation": "An overfit model captures noise or overly specific patterns in the training data. Its performance usually drops on unseen examples.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-08",
+    "question": "What is underfitting?",
+    "options": ["A model that memorizes every training example", "A model trained with too many test examples", "A model that has perfect validation performance", "A model too simple to capture important patterns"],
+    "correctAnswerIndex": 3,
+    "explanation": "An underfit model lacks enough complexity or training to represent the relationship in the data, so it performs poorly even on the training set.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-09",
+    "question": "What does classification accuracy measure?",
+    "options": ["The fraction of predictions that are correct", "The average squared prediction error", "The fraction of predicted positives that are correct", "The fraction of actual positives found"],
+    "correctAnswerIndex": 0,
+    "explanation": "Accuracy is the number of correct predictions divided by the total number of predictions. It can be misleading when classes are highly imbalanced.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-10",
+    "question": "What does precision measure for a binary classifier?",
+    "options": ["The fraction of all examples that are positive", "The fraction of predicted positives that are actually positive", "The fraction of actual positives that are found", "The average distance between predictions"],
+    "correctAnswerIndex": 1,
+    "explanation": "Precision is true positives divided by all predicted positives. It answers: when the model predicts positive, how often is it correct?",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-11",
+    "question": "What does recall measure for a binary classifier?",
+    "options": ["The fraction of predicted positives that are correct", "The number of model features", "The fraction of actual positives that the model identifies", "The average squared error"],
+    "correctAnswerIndex": 2,
+    "explanation": "Recall is true positives divided by all actual positives. It measures how much of the positive class the model successfully finds.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-12",
+    "question": "What is the F1 score designed to summarize?",
+    "options": ["Only the number of true negatives", "Only the training time", "The mean of all feature values", "The harmonic mean of precision and recall"],
+    "correctAnswerIndex": 3,
+    "explanation": "The F1 score combines precision and recall using their harmonic mean, so a high score requires both to be reasonably high.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-13",
+    "question": "What does mean squared error (MSE) calculate for regression predictions?",
+    "options": ["The average of squared differences between predictions and targets", "The fraction of correct class labels", "The number of model trees", "The average absolute difference only"],
+    "correctAnswerIndex": 0,
+    "explanation": "MSE averages the squared residuals between predicted and actual numeric values. Squaring makes larger errors contribute more strongly.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-14",
+    "question": "What does ordinary linear regression commonly model?",
+    "options": ["A probability from zero to one only", "A numeric target as a linear combination of features", "Clusters with no target", "A sequence of tree branches"],
+    "correctAnswerIndex": 1,
+    "explanation": "Linear regression estimates coefficients so a weighted sum of input features predicts a continuous target.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-15",
+    "question": "What is logistic regression commonly used for?",
+    "options": ["Sorting rows by date", "Finding clusters without a target", "Classification using probabilities derived from a linear score", "Reducing every feature to one value"],
+    "correctAnswerIndex": 2,
+    "explanation": "Logistic regression applies a logistic function to a linear score to model class probabilities, commonly for binary classification.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-16",
+    "question": "How does a decision tree make a prediction?",
+    "options": ["By averaging every possible dataset", "By selecting random labels", "By requiring all features to be text", "By following feature-based splits from the root to a leaf"],
+    "correctAnswerIndex": 3,
+    "explanation": "A decision tree repeatedly splits examples using feature-based rules. A prediction is made at the leaf reached by following those rules.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-17",
+    "question": "What is the main goal of k-means clustering?",
+    "options": ["Assign observations to clusters with nearby centroids", "Predict a labeled continuous target", "Calculate classification recall", "Create a train-test split"],
+    "correctAnswerIndex": 0,
+    "explanation": "K-means alternates between assigning points to nearby centroids and updating centroids, seeking clusters with relatively small within-cluster squared distances.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-easy-18",
+    "question": "How does k-nearest neighbors (KNN) commonly classify a new point?",
+    "options": ["By fitting one global line", "By using the labels of nearby training points", "By growing a forest of trees", "By removing the target labels"],
+    "correctAnswerIndex": 1,
+    "explanation": "KNN finds the selected number of training examples nearest to the new point and commonly predicts the majority class among them.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ml-medium-01",
+    "question": "What is a random forest?",
+    "options": ["An ensemble of decision trees trained with randomness", "A single linear model with no features", "A clustering method that always uses two clusters", "A metric for regression"],
+    "correctAnswerIndex": 0,
+    "explanation": "A random forest combines many decision trees trained with sources of randomness such as bootstrap samples and feature subsets, then aggregates their predictions.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-02",
+    "question": "What is the main purpose of k-fold cross-validation?",
+    "options": ["To eliminate the need for a test set in every situation", "To evaluate a model across multiple train-validation splits", "To turn regression into clustering", "To guarantee that every prediction is correct"],
+    "correctAnswerIndex": 1,
+    "explanation": "K-fold cross-validation divides the data into folds and repeatedly trains and validates on different partitions, giving a more stable estimate for comparison or tuning.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-03",
+    "question": "Why is feature scaling often important for KNN?",
+    "options": ["KNN cannot use numeric features", "Scaling changes all labels", "Distance calculations can be dominated by a feature with a larger numeric scale", "Scaling guarantees the best value of k"],
+    "correctAnswerIndex": 2,
+    "explanation": "KNN relies on distances between points. Without scaling, a feature measured in large units can dominate the distance even if it is not more informative.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-04",
+    "question": "Which is an example of feature engineering?",
+    "options": ["Deleting the target labels from the training set", "Changing the random seed only", "Reporting the final score without training", "Creating a day-of-week feature from a timestamp"],
+    "correctAnswerIndex": 3,
+    "explanation": "Feature engineering transforms existing information into useful input variables. Extracting day of week from a timestamp can expose a pattern the model can learn.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-05",
+    "question": "What does a confusion matrix summarize for a classifier?",
+    "options": ["Counts of predicted versus actual classes", "Only the model's training duration", "The average feature magnitude", "The number of cross-validation folds"],
+    "correctAnswerIndex": 0,
+    "explanation": "A confusion matrix organizes counts such as true positives, false positives, true negatives, and false negatives by actual and predicted class.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-06",
+    "question": "Why might a classification split use stratification?",
+    "options": ["To remove the minority class", "To preserve approximate class proportions across splits", "To force all features to have the same units", "To avoid measuring performance"],
+    "correctAnswerIndex": 1,
+    "explanation": "Stratification keeps class proportions similar in the training and validation or test partitions, which is useful when classes are imbalanced.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-07",
+    "question": "A classifier makes 90 correct predictions out of 100. What is its accuracy?",
+    "options": ["0.09", "9%", "90%", "100%"],
+    "correctAnswerIndex": 2,
+    "explanation": "Accuracy is correct predictions divided by total predictions: 90 / 100 = 0.90, or 90%.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-08",
+    "question": "Which property of MSE makes large regression errors especially influential?",
+    "options": ["It ignores the target values", "It counts only exact matches", "It always stays between zero and one", "It squares each error before averaging"],
+    "correctAnswerIndex": 3,
+    "explanation": "Because MSE squares residuals, an error twice as large contributes four times as much squared error before averaging.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-09",
+    "question": "When is high precision especially valuable?",
+    "options": ["When false positives are particularly costly", "When missing every positive is acceptable", "When the target is always continuous", "When there are no predicted positives"],
+    "correctAnswerIndex": 0,
+    "explanation": "High precision means most predicted positives are truly positive, which matters when acting on false alarms is expensive or harmful.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-10",
+    "question": "When is high recall especially valuable?",
+    "options": ["When false positives are impossible", "When missing positive cases is particularly costly", "When the model has no target", "When all classes have identical names"],
+    "correctAnswerIndex": 1,
+    "explanation": "High recall means the model finds a large fraction of actual positive cases, which matters when false negatives are especially costly.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-11",
+    "question": "What happens to the F1 score when either precision or recall is very low?",
+    "options": ["It must equal accuracy", "It becomes a regression coefficient", "It is pulled down because it combines both values", "It is unaffected by either value"],
+    "correctAnswerIndex": 2,
+    "explanation": "F1 is the harmonic mean of precision and recall, so a very low value for either component keeps the combined score low.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-12",
+    "question": "In k-means, what is a centroid?",
+    "options": ["A true class label", "A held-out test example", "A classification threshold", "The representative mean position of a cluster"],
+    "correctAnswerIndex": 3,
+    "explanation": "A k-means centroid is the coordinate-wise mean of the points currently assigned to a cluster and serves as that cluster's representative center.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-13",
+    "question": "What does increasing k in KNN generally change?",
+    "options": ["The number of neighbors used to make a prediction", "The number of target variables in the dataset", "The number of trees in a forest", "The number of training folds"],
+    "correctAnswerIndex": 0,
+    "explanation": "The k hyperparameter specifies how many nearby training examples contribute to a KNN prediction. Its value affects the smoothness of the decision boundary.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-14",
+    "question": "What does the slope coefficient in a simple linear regression describe?",
+    "options": ["The number of rows in the dataset", "The expected change in the target for a one-unit feature increase in the model", "The fraction of correct classifications", "The number of clusters"],
+    "correctAnswerIndex": 1,
+    "explanation": "In a simple linear regression model, the slope is the modeled change in the response associated with a one-unit increase in the predictor.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-15",
+    "question": "What function converts a logistic regression score into a value between zero and one?",
+    "options": ["Absolute value", "Square root", "The sigmoid function", "The sorting function"],
+    "correctAnswerIndex": 2,
+    "explanation": "The sigmoid function maps any real-valued linear score to the interval (0, 1), allowing it to represent a binary class probability.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-16",
+    "question": "What is a common effect of limiting the maximum depth of a decision tree?",
+    "options": ["It guarantees zero training error", "It removes all feature values", "It turns the tree into k-means", "It can reduce complexity and help limit overfitting"],
+    "correctAnswerIndex": 3,
+    "explanation": "A depth limit prevents the tree from making arbitrarily many nested splits, which can reduce variance and the tendency to memorize training noise.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-17",
+    "question": "Which change can help reduce overfitting in a flexible model?",
+    "options": ["Adding appropriate regularization", "Using the test set for every tuning decision", "Removing all validation data", "Increasing model complexity without more evidence"],
+    "correctAnswerIndex": 0,
+    "explanation": "Regularization penalizes or constrains overly complex solutions, which can improve generalization when a model is fitting noise.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-medium-18",
+    "question": "What does one-hot encoding do for a categorical feature?",
+    "options": ["Replaces each category with a set of indicator columns", "Orders categories by their spelling", "Converts every category into the target value", "Removes the feature from the dataset"],
+    "correctAnswerIndex": 1,
+    "explanation": "One-hot encoding represents each category with a separate binary indicator column, avoiding an unintended numeric ordering between categories.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ml-hard-01",
+    "question": "Why is target leakage a serious problem in model evaluation?",
+    "options": ["It lets training features contain information that would not be available at prediction time", "It makes every model unsupervised", "It prevents a model from fitting any data", "It only changes the display format of metrics"],
+    "correctAnswerIndex": 0,
+    "explanation": "Leakage gives the model access to target-derived or future information that will not exist when making real predictions, producing unrealistically high evaluation scores.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-02",
+    "question": "Why can nested cross-validation be used when selecting and evaluating a model?",
+    "options": ["It guarantees that no data is ever reused", "It separates hyperparameter selection from an outer performance estimate", "It removes the need for a target variable", "It always selects a linear algorithm"],
+    "correctAnswerIndex": 1,
+    "explanation": "Nested cross-validation uses inner folds for tuning and outer folds for estimating performance, reducing optimistic bias from evaluating on data used for selection.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-03",
+    "question": "When using standardization in cross-validation, how should the mean and scale be handled?",
+    "options": ["Compute them once using the full dataset before splitting", "Use the test fold to choose the best scale", "Fit them on each training fold and apply them to its validation fold", "Do not transform the validation fold at all"],
+    "correctAnswerIndex": 2,
+    "explanation": "Preprocessing parameters must be learned from the training portion of each fold and then applied unchanged to that fold's validation portion to avoid leakage.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-04",
+    "question": "For a rare but important positive class, which metric may be prioritized when missing positives is costly?",
+    "options": ["Training-set size", "The number of input columns", "R-squared only", "Recall"],
+    "correctAnswerIndex": 3,
+    "explanation": "Recall measures the fraction of actual positives found by the model, so it is important when false negatives are especially costly.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-05",
+    "question": "How does a random forest obtain diversity among its trees?",
+    "options": ["It can use bootstrap samples and random feature subsets", "It forces every tree to have identical splits", "It trains only one tree and copies it", "It removes all categorical features"],
+    "correctAnswerIndex": 0,
+    "explanation": "Random forests introduce variation through sampled training rows and subsets of candidate features, making the trees less correlated before their predictions are combined.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-06",
+    "question": "Why can feature scaling affect k-means clustering?",
+    "options": ["K-means never uses distances", "Features with larger scales can dominate distance-based assignments", "Scaling changes the number of requested clusters automatically", "K-means accepts only categorical features"],
+    "correctAnswerIndex": 1,
+    "explanation": "K-means minimizes distances to centroids, so a feature with numerically large units can dominate the objective unless features are put on comparable scales.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-07",
+    "question": "Why can standardization change KNN predictions even when the data ordering is unchanged?",
+    "options": ["KNN uses model coefficients instead of distances", "Standardization removes the labels", "It changes the relative contribution of features to the distance", "It always changes the value of k"],
+    "correctAnswerIndex": 2,
+    "explanation": "KNN selects neighbors using distances. Standardization changes each feature's scale, which can change which points are closest and therefore change predictions.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-08",
+    "question": "What is the relationship between RMSE and MSE for a regression model?",
+    "options": ["RMSE is MSE divided by the number of features", "RMSE is the classification accuracy of MSE", "RMSE is always smaller because it removes errors", "RMSE is the square root of MSE"],
+    "correctAnswerIndex": 3,
+    "explanation": "Root mean squared error is the square root of mean squared error. RMSE has the same units as the target, while MSE has squared units.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-09",
+    "question": "What happens when a binary classifier's decision threshold is raised, all else equal?",
+    "options": ["It may increase precision while reducing recall", "It guarantees both precision and recall increase", "It changes the training labels", "It makes the model unsupervised"],
+    "correctAnswerIndex": 0,
+    "explanation": "A higher threshold predicts positive less often. This can reduce false positives and increase precision, but it can also miss more true positives and reduce recall.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-10",
+    "question": "How does increasing model complexity often affect the bias-variance trade-off?",
+    "options": ["It always increases bias and decreases variance", "It can reduce bias while increasing variance", "It has no relationship to generalization", "It removes the need for validation"],
+    "correctAnswerIndex": 1,
+    "explanation": "A more flexible model can represent a wider range of patterns, often lowering bias but increasing sensitivity to training noise and therefore variance.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-11",
+    "question": "Why should ordinary random cross-validation be used cautiously for time-ordered data?",
+    "options": ["Time series never contain numeric features", "Random folds always have no validation examples", "Random splits can let future information influence evaluation of earlier periods", "Cross-validation cannot score regressors"],
+    "correctAnswerIndex": 2,
+    "explanation": "Randomly mixing time points can train on future observations while validating on earlier ones, which does not reflect forecasting. Time-aware splits preserve temporal order.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-12",
+    "question": "Why should feature importance from a tree ensemble be interpreted carefully?",
+    "options": ["Tree ensembles cannot make predictions", "Importance is always a causal effect", "All features receive exactly equal importance", "Correlated features can share or distort apparent importance"],
+    "correctAnswerIndex": 3,
+    "explanation": "When features carry overlapping information, importance may be divided among them or assigned unevenly. Importance describes model behavior, not automatically causal influence.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-13",
+    "question": "What is one effect of lowering a binary classifier's probability threshold?",
+    "options": ["It can identify more positives, potentially increasing recall", "It always decreases the number of predicted positives", "It removes the need for labels", "It converts classification into k-means"],
+    "correctAnswerIndex": 0,
+    "explanation": "A lower threshold makes it easier to assign the positive class, which can find more actual positives and increase recall while potentially reducing precision.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-14",
+    "question": "What is multicollinearity in a regression design matrix?",
+    "options": ["A target with no numeric values", "Strong dependence or redundancy among predictor variables", "A test set with too many rows", "A classifier with four classes"],
+    "correctAnswerIndex": 1,
+    "explanation": "Multicollinearity occurs when predictors are strongly related to one another. It can make individual coefficient estimates unstable or difficult to interpret.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-15",
+    "question": "What does probability calibration assess for a classifier?",
+    "options": ["Whether its feature names are alphabetical", "Whether it has exactly one tree", "Whether predicted probabilities correspond to observed frequencies", "Whether every class has the same size"],
+    "correctAnswerIndex": 2,
+    "explanation": "A calibrated classifier's predictions of, for example, 0.7 should correspond to events that occur about 70% of the time among comparable cases.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-16",
+    "question": "What is out-of-bag evaluation in a bootstrap-based random forest?",
+    "options": ["Evaluation using only the final test labels", "Evaluation after deleting all training rows", "Evaluation using a separate neural network", "Evaluation on training observations left out of a tree's bootstrap sample"],
+    "correctAnswerIndex": 3,
+    "explanation": "Each bootstrap sample leaves out some training observations for a particular tree. Those out-of-bag observations can provide an internal performance estimate when aggregated across trees.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-17",
+    "question": "Why are preprocessing steps often placed inside a machine-learning pipeline?",
+    "options": ["The pipeline can fit transformations only on each training fold during validation", "Pipelines guarantee perfect accuracy", "Pipelines remove the need for target labels", "The pipeline turns every algorithm into a tree"],
+    "correctAnswerIndex": 0,
+    "explanation": "A pipeline keeps preprocessing and modeling together so transformations are fitted within the appropriate training data and then applied consistently to validation or test data.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ml-hard-18",
+    "question": "What is the difference between a model parameter and a hyperparameter?",
+    "options": ["Parameters are chosen before data exists, while hyperparameters are learned from each example", "Parameters are learned during training, while hyperparameters are set or tuned outside the fitting process", "They are two names for the target variable", "Hyperparameters can never be changed"],
+    "correctAnswerIndex": 1,
+    "explanation": "Model parameters, such as linear weights, are learned from training data. Hyperparameters, such as tree depth or KNN's k, are chosen or tuned around the training process.",
+    "difficulty": "Hard"
+  }
+]

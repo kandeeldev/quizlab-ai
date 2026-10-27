@@ -1,0 +1,434 @@
+[
+  {
+    "id": "dl-easy-01",
+    "question": "What does an artificial neuron typically compute first?",
+    "options": ["A weighted sum of inputs plus a bias", "A database join", "A random class label", "A chart legend"],
+    "correctAnswerIndex": 0,
+    "explanation": "A neuron combines its inputs using learned weights and adds a bias before passing the result through an activation function.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-02",
+    "question": "What is a layer in a neural network?",
+    "options": ["A single training example", "A group of neurons at a particular stage of computation", "A loss value only", "A separate dataset file"],
+    "correctAnswerIndex": 1,
+    "explanation": "A layer contains units that transform their inputs and pass outputs to the next stage. Networks commonly have input, hidden, and output layers.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-03",
+    "question": "What do weights control in a neural network?",
+    "options": ["The number of training epochs", "The file format of a model", "The strength of input connections", "The number of classes in every dataset"],
+    "correctAnswerIndex": 2,
+    "explanation": "A weight scales how strongly an input contributes to a neuron's weighted sum. Training adjusts weights to improve predictions.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-04",
+    "question": "What is the role of a bias in a neuron?",
+    "options": ["It stores the test set", "It removes all nonlinearities", "It chooses the optimizer automatically", "It shifts the neuron's activation before the activation function"],
+    "correctAnswerIndex": 3,
+    "explanation": "A bias is an additional learned value that shifts the weighted sum, allowing the neuron to activate even when the weighted inputs alone would not reach a useful threshold.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-05",
+    "question": "Why are activation functions used in hidden layers?",
+    "options": ["They add nonlinear behavior to the network", "They remove every trainable parameter", "They guarantee zero loss", "They sort the training examples"],
+    "correctAnswerIndex": 0,
+    "explanation": "Nonlinear activation functions let stacked layers represent nonlinear relationships. Without them, a stack of linear layers is equivalent to one linear transformation.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-06",
+    "question": "What does the ReLU activation function return for a negative input?",
+    "options": ["The input multiplied by two", "Zero", "One", "The absolute value of the input"],
+    "correctAnswerIndex": 1,
+    "explanation": "ReLU, defined as max(0, x), returns zero for negative inputs and returns the input itself for nonnegative inputs.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-07",
+    "question": "What is a common output range of the sigmoid activation function?",
+    "options": ["Any value from negative infinity to infinity", "Only negative values", "Values between zero and one", "Only integer values"],
+    "correctAnswerIndex": 2,
+    "explanation": "The sigmoid function maps real-valued inputs to values strictly between zero and one, which is useful for representing a binary probability.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-08",
+    "question": "What does a loss function measure during model training?",
+    "options": ["The number of layers only", "The amount of disk space used", "The number of input columns", "How different the predictions are from the desired targets"],
+    "correctAnswerIndex": 3,
+    "explanation": "A loss function assigns a numeric value to prediction error. Training aims to adjust model parameters to reduce this value on the training data.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-09",
+    "question": "What is the basic goal of gradient descent?",
+    "options": ["Update parameters in a direction that reduces the loss", "Increase the number of classes", "Shuffle the test labels", "Replace every activation with ReLU"],
+    "correctAnswerIndex": 0,
+    "explanation": "Gradient descent uses the loss gradient to update parameters toward lower loss, usually with a learning rate controlling the step size.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-10",
+    "question": "What does backpropagation calculate?",
+    "options": ["A new training dataset", "Gradients of the loss with respect to model parameters", "The final deployment URL", "Only the number of neurons"],
+    "correctAnswerIndex": 1,
+    "explanation": "Backpropagation applies the chain rule to efficiently calculate how the loss changes with each parameter, providing gradients for optimization.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-11",
+    "question": "What is an epoch in neural network training?",
+    "options": ["A single neuron", "A model's activation function", "One complete pass through the training dataset", "A test metric"],
+    "correctAnswerIndex": 2,
+    "explanation": "One epoch means the training algorithm has processed every training example once, usually through multiple mini-batch updates.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-12",
+    "question": "What is dropout used for during neural network training?",
+    "options": ["To increase the number of labels", "To guarantee perfect accuracy", "To replace the loss function", "To randomly deactivate some units as regularization"],
+    "correctAnswerIndex": 3,
+    "explanation": "Dropout randomly omits units during training, discouraging fragile co-adaptations and helping reduce overfitting. It is normally disabled during evaluation.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-13",
+    "question": "What kind of pattern is a convolutional neural network especially suited to detect in images?",
+    "options": ["Local spatial patterns such as edges and textures", "Only the order of database rows", "Audio labels without input data", "Random numbers with no structure"],
+    "correctAnswerIndex": 0,
+    "explanation": "Convolutional layers use local receptive fields and shared filters, making them effective at detecting spatial patterns in images.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-14",
+    "question": "What type of data are recurrent neural networks designed to process?",
+    "options": ["Only unordered sets", "Sequences where order can matter", "Only single scalar values", "Model configuration files only"],
+    "correctAnswerIndex": 1,
+    "explanation": "RNNs process sequences step by step and maintain a hidden state, allowing earlier inputs to influence later outputs.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-15",
+    "question": "What is a key purpose of the gates in an LSTM?",
+    "options": ["They choose the number of training examples", "They remove all recurrent connections", "They control what information is retained or forgotten", "They convert images directly into labels"],
+    "correctAnswerIndex": 2,
+    "explanation": "LSTM gates regulate the flow of information into, out of, and within the cell state, helping the network retain useful information over longer sequences.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-16",
+    "question": "What is the main idea of attention in a Transformer?",
+    "options": ["Process only the first token", "Replace every token with a random value", "Force all tokens to have identical representations", "Weight the relevance of different input positions when forming a representation"],
+    "correctAnswerIndex": 3,
+    "explanation": "Attention lets a model assign different weights to positions when representing a token, helping it use relevant context from other positions.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-17",
+    "question": "What is transfer learning?",
+    "options": ["Starting from a model trained on one task or dataset and adapting it to another", "Training without any data", "Copying the test labels into the training set", "Removing all pretrained parameters"],
+    "correctAnswerIndex": 0,
+    "explanation": "Transfer learning reuses representations learned from a source task or dataset and adapts them to a related target task, often reducing data or training requirements.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-easy-18",
+    "question": "Which statement describes PyTorch, TensorFlow, and Keras at a conceptual level?",
+    "options": ["They are all database systems", "They are tools or frameworks used to build and train machine-learning models", "They are image file formats", "They are evaluation metrics"],
+    "correctAnswerIndex": 1,
+    "explanation": "PyTorch and TensorFlow provide deep-learning capabilities, while Keras offers a high-level neural-network API that can work with supported backends such as TensorFlow.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "dl-medium-01",
+    "question": "What does stochastic gradient descent update during training?",
+    "options": ["Model parameters using gradients from a mini-batch or example", "Only the test labels", "The number of output classes after every batch", "The names of the model layers"],
+    "correctAnswerIndex": 0,
+    "explanation": "Stochastic gradient descent estimates the loss gradient from one example or a mini-batch and updates trainable parameters in the direction that tends to reduce loss.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-02",
+    "question": "What is a common advantage of the Adam optimizer?",
+    "options": ["It never uses a learning rate", "It adapts step sizes using estimates of gradient moments", "It requires no model parameters", "It guarantees a global optimum"],
+    "correctAnswerIndex": 1,
+    "explanation": "Adam combines momentum-like estimates of the gradient and squared gradient to adapt parameter step sizes. It can work well across many problems, though it does not guarantee an optimum.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-03",
+    "question": "Which loss is commonly used for single-label multiclass classification with softmax outputs?",
+    "options": ["Mean absolute percentage error only", "Euclidean distance between images only", "Cross-entropy loss", "A sorting loss with no targets"],
+    "correctAnswerIndex": 2,
+    "explanation": "Multiclass cross-entropy compares the target class distribution with the model's predicted probability distribution, penalizing low probability assigned to the correct class.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-04",
+    "question": "Why is mean squared error often used for a continuous regression output?",
+    "options": ["It counts only class names", "It cannot compare numeric values", "It selects convolution filters", "It penalizes squared differences between predicted and target values"],
+    "correctAnswerIndex": 3,
+    "explanation": "MSE measures the average squared difference between numeric predictions and targets, providing a differentiable objective for regression training.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-05",
+    "question": "What does a softmax output commonly represent in multiclass classification?",
+    "options": ["A probability distribution across classes", "A set of unbounded integer labels", "A list of convolution kernel sizes", "The number of training epochs"],
+    "correctAnswerIndex": 0,
+    "explanation": "Softmax converts a vector of scores into nonnegative values that sum to one, which can be interpreted as class probabilities.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-06",
+    "question": "Why can gradients vanish in a deep or recurrent network?",
+    "options": ["The model has too many labels", "Repeated derivatives with magnitude below one can shrink during backpropagation", "The test set is shuffled", "The optimizer has no parameters"],
+    "correctAnswerIndex": 1,
+    "explanation": "When gradients are repeatedly multiplied by small derivatives, their magnitudes can become extremely small, slowing learning in earlier layers or earlier time steps.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-07",
+    "question": "What is one common effect of batch normalization?",
+    "options": ["It removes the need for a loss function", "It converts images into labels", "It normalizes intermediate activations using batch statistics during training", "It guarantees no overfitting"],
+    "correctAnswerIndex": 2,
+    "explanation": "Batch normalization normalizes activations using statistics from a mini-batch during training and maintains running statistics for evaluation, which can stabilize optimization.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-08",
+    "question": "What is early stopping?",
+    "options": ["Stopping before the first parameter update", "Deleting the validation set", "Increasing the number of epochs forever", "Stopping training when validation performance stops improving"],
+    "correctAnswerIndex": 3,
+    "explanation": "Early stopping monitors validation behavior and halts training when additional epochs no longer improve the chosen validation criterion, helping limit overfitting.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-09",
+    "question": "What does pooling commonly do in a convolutional neural network?",
+    "options": ["Reduce spatial dimensions while summarizing local activations", "Add a new target label to every image", "Replace all convolution filters with text", "Make every feature map larger"],
+    "correctAnswerIndex": 0,
+    "explanation": "Pooling summarizes nearby activations, often reducing height and width and making later computation less sensitive to small local shifts.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-10",
+    "question": "What does the hidden state in a basic RNN carry?",
+    "options": ["Only the final target label", "A representation of information from prior sequence steps", "The complete test set", "A fixed image kernel"],
+    "correctAnswerIndex": 1,
+    "explanation": "An RNN updates a hidden state at each step, using it as a compact representation of information processed from earlier positions in the sequence.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-11",
+    "question": "How do LSTMs help with long-term dependencies compared with a basic RNN?",
+    "options": ["They remove all sequential computation", "They use no trainable parameters", "Their gated cell state provides controlled information flow over time", "They can process only one time step"],
+    "correctAnswerIndex": 2,
+    "explanation": "LSTMs use gates and a cell state to regulate information flow, which can preserve useful signals across more time steps than a basic recurrent update.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-12",
+    "question": "Why do Transformers use positional information?",
+    "options": ["Attention automatically knows absolute order", "Positions are needed only for image colors", "Position removes the need for tokens", "Self-attention alone does not inherently encode token order"],
+    "correctAnswerIndex": 3,
+    "explanation": "Self-attention can compare tokens without processing them in a fixed sequence, so positional encodings or related mechanisms provide information about order.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-13",
+    "question": "Why can Transformers process many sequence positions in parallel during training?",
+    "options": ["Self-attention does not require recurrent step-by-step state updates", "They never use matrix operations", "They ignore all token relationships", "They train only one token per model"],
+    "correctAnswerIndex": 0,
+    "explanation": "Unlike a basic recurrent network, a Transformer can compute attention for sequence positions using parallel matrix operations, subject to hardware and memory limits.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-14",
+    "question": "What is a common transfer-learning strategy when the target dataset is small?",
+    "options": ["Randomly delete the pretrained model", "Freeze some pretrained layers and train a new output head", "Use the target labels as input features", "Skip evaluation entirely"],
+    "correctAnswerIndex": 1,
+    "explanation": "Freezing pretrained layers preserves learned representations while a new task-specific head adapts to the target labels, reducing the number of parameters that must be learned.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-15",
+    "question": "What is Keras commonly used for?",
+    "options": ["Managing operating-system processes", "Storing raw images without metadata", "Defining and training neural networks through a high-level API", "Calculating only spreadsheet formulas"],
+    "correctAnswerIndex": 2,
+    "explanation": "Keras provides high-level abstractions for defining, compiling, training, and evaluating neural-network models, commonly through a TensorFlow backend.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-16",
+    "question": "What is TensorFlow primarily known for in deep learning?",
+    "options": ["Being a file compression format", "Being a chart type", "Being a database query language", "Providing tensor operations, automatic differentiation, and model-building tools"],
+    "correctAnswerIndex": 3,
+    "explanation": "TensorFlow provides numerical tensor operations, automatic differentiation, and tools for training and deploying machine-learning models.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-17",
+    "question": "What is PyTorch commonly used for?",
+    "options": ["Building and training neural networks with tensor operations and automatic differentiation", "Creating only static HTML pages", "Replacing all evaluation metrics", "Encoding labels without a model"],
+    "correctAnswerIndex": 0,
+    "explanation": "PyTorch provides tensors, automatic differentiation, neural-network modules, and training utilities for building deep-learning systems.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-medium-18",
+    "question": "Which change can help reduce overfitting in a neural network?",
+    "options": ["Evaluating only on the training set", "Using regularization such as dropout or weight penalties", "Increasing the number of labels without data", "Removing the validation set"],
+    "correctAnswerIndex": 1,
+    "explanation": "Regularization methods constrain or randomize the model during training, which can reduce reliance on noise and improve generalization.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "dl-hard-01",
+    "question": "What does a self-attention head compute conceptually?",
+    "options": ["A weighted combination of value representations using query-key relevance", "Only the average pixel of an image", "A fixed class label independent of the input", "A recurrent state that must use one token at a time"],
+    "correctAnswerIndex": 0,
+    "explanation": "Self-attention compares queries with keys to obtain relevance weights and uses them to combine value vectors, allowing each position to use information from other positions.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-02",
+    "question": "Why are residual connections useful in deep networks?",
+    "options": ["They remove the need for nonlinear activations", "They provide a shorter path for information and gradients through layers", "They force all layers to have identical weights", "They replace the training dataset"],
+    "correctAnswerIndex": 1,
+    "explanation": "A residual connection adds a layer block's input to its output, creating a direct path that can improve gradient flow and make very deep networks easier to optimize.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-03",
+    "question": "What is the purpose of positional encoding in a Transformer?",
+    "options": ["To make every token identical", "To remove attention weights", "To provide information about token positions or order", "To turn the model into a convolution only"],
+    "correctAnswerIndex": 2,
+    "explanation": "Because self-attention alone is permutation-aware rather than inherently sequential, positional information helps the model distinguish different token orders.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-04",
+    "question": "What does gradient clipping commonly help prevent?",
+    "options": ["All model underfitting", "The need for any optimizer", "The creation of training labels", "Unstable updates caused by very large gradients"],
+    "correctAnswerIndex": 3,
+    "explanation": "Gradient clipping limits gradient magnitude or norm before an update, reducing the chance that an unusually large gradient causes an unstable parameter change.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-05",
+    "question": "What does momentum add to gradient-based optimization?",
+    "options": ["A running direction based on previous gradients", "A guarantee that the loss is convex", "A second target label", "A rule that freezes every weight"],
+    "correctAnswerIndex": 0,
+    "explanation": "Momentum accumulates a moving influence from earlier gradients, which can smooth oscillations and help optimization move consistently along useful directions.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-06",
+    "question": "What is a learning-rate schedule?",
+    "options": ["A list of model class names", "A rule that changes the learning rate during training", "A way to remove validation data", "A fixed activation function"],
+    "correctAnswerIndex": 1,
+    "explanation": "A learning-rate schedule changes the optimizer step size according to training progress or another rule, such as reducing it after a plateau.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-07",
+    "question": "Why can data augmentation improve an image model's generalization?",
+    "options": ["It guarantees that labels are correct", "It removes all image variation", "It creates varied training examples that preserve the target concept", "It replaces the need for a test set"],
+    "correctAnswerIndex": 2,
+    "explanation": "Augmentation applies label-preserving transformations such as suitable crops or flips, exposing the model to more variation and reducing reliance on incidental image details.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-08",
+    "question": "What is the receptive field of a convolutional unit?",
+    "options": ["The number of classes in the dataset", "The optimizer's learning rate", "The complete training history", "The region of the input that can influence that unit"],
+    "correctAnswerIndex": 3,
+    "explanation": "A unit's receptive field is the portion of the original input that can affect its activation. Deeper layers often have larger receptive fields than early layers.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-09",
+    "question": "What is a limitation of a bidirectional recurrent model for real-time forecasting?",
+    "options": ["It may use future sequence context that is unavailable at prediction time", "It cannot process numeric values", "It has no trainable parameters", "It always has lower memory use than a unidirectional model"],
+    "correctAnswerIndex": 0,
+    "explanation": "A bidirectional model processes information from both directions, which can include future observations relative to a prediction point. That context may not be available in real-time use.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-10",
+    "question": "What is teacher forcing in sequence-model training?",
+    "options": ["Replacing all target tokens with random tokens", "Using the ground-truth previous output as the next input during training", "Freezing every recurrent weight", "Training only on the test sequence"],
+    "correctAnswerIndex": 1,
+    "explanation": "With teacher forcing, a sequence decoder receives the true previous token during training rather than its own previous prediction, which can make optimization easier.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-11",
+    "question": "What does fine-tuning a pretrained model usually mean?",
+    "options": ["Deleting its learned representations", "Using it only to create charts", "Continuing training on a target task, often with a small learning rate", "Running it without any target data"],
+    "correctAnswerIndex": 2,
+    "explanation": "Fine-tuning updates some or all pretrained parameters using target-task data, commonly with a smaller learning rate to preserve useful prior representations.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-12",
+    "question": "Why can a pretrained model perform poorly after transfer to a new domain?",
+    "options": ["Pretraining always removes all useful features", "Neural networks cannot process new inputs", "The target task never needs labels", "The source and target data distributions or tasks may differ substantially"],
+    "correctAnswerIndex": 3,
+    "explanation": "Transfer works best when the source and target tasks or domains share useful structure. A large distribution shift can make pretrained features less suitable.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-13",
+    "question": "Why can class-weighted loss help with imbalanced classification?",
+    "options": ["It gives selected classes greater influence on the training objective", "It removes all minority examples", "It guarantees equal precision and recall", "It turns labels into continuous features"],
+    "correctAnswerIndex": 0,
+    "explanation": "Class weights increase the contribution of errors from selected classes, often helping the model pay more attention to a rare but important class.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-14",
+    "question": "What does layer normalization normalize in a neural network?",
+    "options": ["The number of training examples", "Activations across a feature dimension for an individual example", "Only the target labels", "The names of attention heads"],
+    "correctAnswerIndex": 1,
+    "explanation": "Layer normalization computes normalization statistics across features for each example, unlike batch normalization's typical use of statistics across a mini-batch.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-15",
+    "question": "Why is dropout normally disabled during model evaluation?",
+    "options": ["Evaluation has no inputs", "Dropout only works on convolutional layers", "Evaluation should use the full learned network rather than randomly dropping units", "Disabling it changes the target labels"],
+    "correctAnswerIndex": 2,
+    "explanation": "During evaluation, using all units gives a stable prediction. Randomly dropping units is used as a training-time regularization mechanism.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-16",
+    "question": "What is a good practice when using early stopping?",
+    "options": ["Monitor training loss only and ignore validation behavior", "Stop before the model sees any example", "Choose the stopping point using the test set repeatedly", "Monitor a validation metric and retain the best validation checkpoint"],
+    "correctAnswerIndex": 3,
+    "explanation": "Early stopping should use a validation criterion, and restoring the best checkpoint helps avoid returning a later model that has already begun to overfit.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-17",
+    "question": "Why are careful weight initialization methods useful in deep networks?",
+    "options": ["They can help keep activation and gradient scales reasonable at the start of training", "They guarantee the final model is optimal", "They remove the need for data preprocessing", "They assign the correct target to each example"],
+    "correctAnswerIndex": 0,
+    "explanation": "Initialization methods choose starting scales that can help signals and gradients avoid becoming excessively small or large as they pass through layers.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dl-hard-18",
+    "question": "What is one conceptual difference between a framework such as PyTorch or TensorFlow and a high-level API such as Keras?",
+    "options": ["Frameworks cannot compute gradients", "A high-level API can simplify model definition while relying on a backend for lower-level tensor and training operations", "Keras is only a file format", "TensorFlow and PyTorch are evaluation metrics"],
+    "correctAnswerIndex": 1,
+    "explanation": "High-level APIs provide convenient model-building abstractions, while frameworks expose broader tensor, differentiation, device, and deployment capabilities underneath.",
+    "difficulty": "Hard"
+  }
+]

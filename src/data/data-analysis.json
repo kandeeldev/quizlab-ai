@@ -1,0 +1,434 @@
+[
+  {
+    "id": "da-easy-01",
+    "question": "What does a Pandas DataFrame represent?",
+    "options": ["A two-dimensional labeled table of data", "A single Python number", "Only a chart image", "A database server"],
+    "correctAnswerIndex": 0,
+    "explanation": "A DataFrame is a two-dimensional table with labeled rows and columns. It can hold columns with different data types.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-02",
+    "question": "What is a Pandas Series?",
+    "options": ["A collection of chart colors", "A one-dimensional labeled array", "A two-dimensional image", "A SQL query"],
+    "correctAnswerIndex": 1,
+    "explanation": "A Series is a one-dimensional Pandas object with values and an associated index. A DataFrame can be viewed as a collection of aligned Series columns.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-03",
+    "question": "Which Pandas function commonly reads a CSV file into a DataFrame?",
+    "options": ["pd.load_csv", "pd.open_csv", "pd.read_csv", "pd.csv_table"],
+    "correctAnswerIndex": 2,
+    "explanation": "Pandas provides read_csv for reading comma-separated values into a DataFrame, with options for headers, types, separators, and more.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-04",
+    "question": "Which Pandas method displays the first five rows of a DataFrame by default?",
+    "options": ["tail", "first", "sample", "head"],
+    "correctAnswerIndex": 3,
+    "explanation": "DataFrame.head() returns the first five rows by default. A different number can be supplied, such as head(10).",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-05",
+    "question": "What does the DataFrame shape attribute return?",
+    "options": ["The number of rows and columns as a tuple", "The column names only", "The data types of all values", "The mean of each column"],
+    "correctAnswerIndex": 0,
+    "explanation": "DataFrame.shape returns a tuple in the form (number of rows, number of columns), which describes the table's dimensions.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-06",
+    "question": "Which NumPy function creates an array filled with zeros?",
+    "options": ["np.empty_values", "np.zeros", "np.blank", "np.none"],
+    "correctAnswerIndex": 1,
+    "explanation": "np.zeros creates an array of a requested shape whose entries are initialized to zero.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-07",
+    "question": "What does NumPy's ndim attribute report?",
+    "options": ["The total number of elements", "The largest value", "The number of dimensions", "The memory address"],
+    "correctAnswerIndex": 2,
+    "explanation": "An ndarray's ndim property reports how many axes or dimensions it has. A matrix-like two-dimensional array has ndim equal to 2.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-08",
+    "question": "Which statistic is the middle value after sorted observations are ordered?",
+    "options": ["Mean", "Range", "Variance", "Median"],
+    "correctAnswerIndex": 3,
+    "explanation": "The median is the middle observation in sorted data, or the average of the two middle observations when the count is even.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-09",
+    "question": "Which Pandas value is commonly used to represent a missing entry?",
+    "options": ["NaN", "MISSING_VALUE_ONLY", "zero in every case", "False in every case"],
+    "correctAnswerIndex": 0,
+    "explanation": "Pandas commonly represents missing numeric values with NaN, while its missing-data tools also recognize values such as None and NaT depending on the column type.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-10",
+    "question": "Which Pandas method reports whether each value is missing?",
+    "options": ["is_empty", "isna", "missing_values", "check_nulls_only"],
+    "correctAnswerIndex": 1,
+    "explanation": "isna returns a Boolean-shaped object indicating which values are missing. isnull is an equivalent Pandas alias.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-11",
+    "question": "Which chart is generally useful for showing the distribution of one numeric variable?",
+    "options": ["Pie chart", "Network graph", "Histogram", "Gantt chart"],
+    "correctAnswerIndex": 2,
+    "explanation": "A histogram groups numeric values into bins, making the distribution's shape, center, spread, and possible outliers easier to inspect.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-12",
+    "question": "What does a scatter plot primarily show?",
+    "options": ["The rows of a table in storage order", "Parts of one whole only", "A sequence of text tokens", "The relationship between two numeric variables"],
+    "correctAnswerIndex": 3,
+    "explanation": "A scatter plot places one numeric variable on each axis, allowing patterns, associations, clusters, and outliers between them to be examined.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-13",
+    "question": "Which Pandas method removes rows containing missing values by default?",
+    "options": ["dropna", "remove_nulls_forever", "clean_missing", "delete_nan_columns_only"],
+    "correctAnswerIndex": 0,
+    "explanation": "DataFrame.dropna removes rows with missing values by default. Its parameters can change which axis or how many missing values trigger removal.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-14",
+    "question": "What does DataFrame.describe() commonly provide for numeric columns?",
+    "options": ["Only column names", "Summary statistics such as count, mean, and quartiles", "A machine-learning model", "A chart without data"],
+    "correctAnswerIndex": 1,
+    "explanation": "For numeric columns, describe commonly reports count, mean, standard deviation, minimum, quartiles, and maximum.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-15",
+    "question": "Which NumPy object is designed for efficient numerical array operations?",
+    "options": ["pandas.Chart", "csv.Row", "math.Table", "numpy.ndarray"],
+    "correctAnswerIndex": 3,
+    "explanation": "numpy.ndarray is NumPy's multidimensional array object, designed for compact storage and vectorized numerical operations.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-16",
+    "question": "Which chart is commonly used to compare values across discrete categories?",
+    "options": ["Histogram", "Bar chart", "Contour map only", "Scatter matrix only"],
+    "correctAnswerIndex": 1,
+    "explanation": "A bar chart uses separate bars for categories, making differences in their values easy to compare.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-17",
+    "question": "What is the mean of the values 2, 4, and 6?",
+    "options": ["3", "5", "4", "6"],
+    "correctAnswerIndex": 2,
+    "explanation": "The mean is the sum divided by the number of values: (2 + 4 + 6) / 3 = 4.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-easy-18",
+    "question": "Which visualization is most suitable for showing a value changing over time?",
+    "options": ["Line chart", "Pie chart", "Single-value table only", "Unordered word list"],
+    "correctAnswerIndex": 0,
+    "explanation": "A line chart connects values in time order, making trends, changes, and recurring patterns easier to see.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "da-medium-01",
+    "question": "What does DataFrame.groupby() primarily do?",
+    "options": ["Sorts every column alphabetically", "Splits rows into groups based on one or more keys", "Deletes duplicate rows automatically", "Converts all values to strings"],
+    "correctAnswerIndex": 1,
+    "explanation": "groupby divides rows into groups with the same key values so that calculations such as sums, means, or counts can be performed per group.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-02",
+    "question": "Which Pandas operation calculates a mean for each group?",
+    "options": ["df.groupby('team').mean()", "df.mean_groups('team')", "df.group_mean_only('team')", "df.aggregate_rows('team', 'mean')"],
+    "correctAnswerIndex": 0,
+    "explanation": "After groupby creates groups, calling mean computes the arithmetic mean for applicable columns within each group.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-03",
+    "question": "What is the purpose of DataFrame.fillna()?",
+    "options": ["It removes all columns", "It sorts missing values to the top", "It turns every value into NaN", "It replaces missing values according to a supplied strategy"],
+    "correctAnswerIndex": 3,
+    "explanation": "fillna replaces missing entries with a value, a statistic, or a method such as forward fill. The chosen strategy should reflect the meaning of the data.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-04",
+    "question": "What does DataFrame.loc primarily use for selection?",
+    "options": ["Only zero-based positions", "Only random samples", "Only NumPy array strides", "Labels or Boolean conditions"],
+    "correctAnswerIndex": 3,
+    "explanation": "loc is label-based and can also accept Boolean conditions. In contrast, iloc selects primarily by integer position.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-05",
+    "question": "What does DataFrame.iloc primarily use for selection?",
+    "options": ["Integer positions", "Column data types only", "Regular expressions only", "Group labels only"],
+    "correctAnswerIndex": 0,
+    "explanation": "iloc selects rows and columns by zero-based integer position, such as iloc[0, 1] for the first row and second column.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-06",
+    "question": "What does NumPy broadcasting allow?",
+    "options": ["Only arrays with identical shapes to be added", "Arithmetic between compatible shapes by conceptually expanding dimensions", "Automatic conversion of numbers into strings", "Sorting arrays without comparisons"],
+    "correctAnswerIndex": 1,
+    "explanation": "Broadcasting lets NumPy operate on arrays with compatible shapes by treating smaller dimensions as if they were expanded without physically copying every value.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-07",
+    "question": "What does np.mean(array, axis=0) usually calculate for a two-dimensional array?",
+    "options": ["A mean for each row", "One mean over the entire array only", "The median of each column", "A mean for each column"],
+    "correctAnswerIndex": 3,
+    "explanation": "For a two-dimensional array, axis=0 reduces down the rows and returns one mean for each column. axis=1 instead reduces across columns to produce row means.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-08",
+    "question": "What is the main purpose of a Pandas merge?",
+    "options": ["To combine tables using related key columns", "To fill every missing value with zero", "To draw a chart", "To convert dates into numbers"],
+    "correctAnswerIndex": 0,
+    "explanation": "merge combines rows from two DataFrames using matching key columns or indexes, similar to a relational database join.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-09",
+    "question": "What does an inner join keep when combining two tables?",
+    "options": ["All rows from the left table", "All rows from both tables", "Only rows with matching keys in both tables", "Only rows with missing keys"],
+    "correctAnswerIndex": 2,
+    "explanation": "An inner join retains only records whose join keys appear in both inputs. Unmatched rows from either input are omitted.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-10",
+    "question": "What does the standard deviation describe?",
+    "options": ["The number of columns", "The typical spread of values around the mean", "The most frequent category only", "The number of missing values"],
+    "correctAnswerIndex": 1,
+    "explanation": "Standard deviation measures the typical distance of observations from their mean, with a larger value indicating greater spread under the same units.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-11",
+    "question": "What does a box plot commonly show?",
+    "options": ["Only the exact order of rows", "A categorical label dictionary", "Quartiles, median, spread, and possible outliers", "The source code of a chart"],
+    "correctAnswerIndex": 2,
+    "explanation": "A box plot summarizes a numeric distribution using the median, quartiles, whiskers, and sometimes points for potential outliers.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-12",
+    "question": "Why might an analyst use a log-scaled axis for a visualization?",
+    "options": ["To make all observations identical", "To remove the need for labels", "To guarantee a normal distribution", "To display values spanning several orders of magnitude more clearly"],
+    "correctAnswerIndex": 3,
+    "explanation": "A logarithmic axis represents multiplicative changes with equal visual distances, which can make highly skewed values or several orders of magnitude easier to compare.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-13",
+    "question": "What does DataFrame.duplicated() return?",
+    "options": ["A Boolean Series marking duplicate rows after their first occurrence", "A copy containing only column names", "The number of unique data types", "A sorted DataFrame"],
+    "correctAnswerIndex": 0,
+    "explanation": "duplicated returns a Boolean Series identifying rows that are duplicates of an earlier row by default. It can be combined with filtering or drop_duplicates.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-14",
+    "question": "What does NumPy vectorization mean in common data analysis code?",
+    "options": ["Writing one Python loop per element", "Applying operations to whole arrays using optimized routines", "Converting arrays to diagrams", "Removing all numeric types"],
+    "correctAnswerIndex": 1,
+    "explanation": "Vectorized NumPy operations apply computations to arrays using optimized routines instead of requiring an explicit Python loop for every element.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-15",
+    "question": "What does a correlation close to zero indicate in a linear correlation measure?",
+    "options": ["A guaranteed causal relationship", "A perfect negative relationship", "Little or no linear association", "That both variables have the same units"],
+    "correctAnswerIndex": 2,
+    "explanation": "A correlation near zero indicates little linear association under that measure. It does not prove that no nonlinear relationship exists or that one variable cannot cause another.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-16",
+    "question": "Why should an analyst label chart axes with units when applicable?",
+    "options": ["Labels change the underlying data", "Units are needed to interpret the scale and magnitude", "Labels remove outliers", "Units are only useful for pie charts"],
+    "correctAnswerIndex": 1,
+    "explanation": "Axis labels and units tell viewers what the numbers measure and how large they are, which prevents ambiguous or misleading interpretation.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-17",
+    "question": "What does Pandas pivot_table commonly help produce?",
+    "options": ["A summarized table across row and column categories", "A raw text file without columns", "A neural network", "A list with no aggregation"],
+    "correctAnswerIndex": 0,
+    "explanation": "pivot_table reshapes and aggregates data across selected index and column categories, making summaries such as mean sales by region and month convenient.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-medium-18",
+    "question": "What does np.where(condition, x, y) select?",
+    "options": ["Only values from x regardless of condition", "A random subset of y", "x where condition is true and y where it is false", "The indexes of all missing values"],
+    "correctAnswerIndex": 2,
+    "explanation": "np.where chooses elementwise between x and y: it returns x where the condition is true and y where the condition is false.",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "da-hard-01",
+    "question": "What is the main reason to split data before fitting imputation statistics for a predictive model?",
+    "options": ["To prevent information from the validation or test data leaking into training", "To make every column numeric", "To guarantee a larger training set", "To remove all outliers automatically"],
+    "correctAnswerIndex": 0,
+    "explanation": "Preprocessing statistics should be learned from training data only. Using validation or test values during fitting leaks information and can make evaluation overly optimistic.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-02",
+    "question": "What is the difference between groupby().agg() and groupby().transform() in Pandas?",
+    "options": ["agg returns only strings, while transform returns only numbers", "agg reduces each group, while transform returns values aligned to the original rows", "transform always sorts groups, while agg never does", "They are identical for every use"],
+    "correctAnswerIndex": 1,
+    "explanation": "agg produces one or more summary values per group, while transform broadcasts a group-wise result back to the original row shape so it can be aligned with each row.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-03",
+    "question": "Why can median imputation be preferable to mean imputation for a heavily skewed numeric column?",
+    "options": ["The median is always larger", "The median requires no observations", "The median is less affected by extreme values", "The mean cannot be computed numerically"],
+    "correctAnswerIndex": 2,
+    "explanation": "The median is a robust measure of center and is less influenced by extreme observations than the mean, so it can better represent a skewed distribution.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-04",
+    "question": "What does pandas.DataFrame.merge(..., how='left') preserve?",
+    "options": ["Only keys present in both tables", "Only rows from the right table", "Only rows with missing matches", "All rows from the left DataFrame, with matching right data when available"],
+    "correctAnswerIndex": 3,
+    "explanation": "A left join preserves every row from the left DataFrame and adds matching columns from the right DataFrame. Unmatched right-side values become missing.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-05",
+    "question": "What is a NumPy view compared with a copy?",
+    "options": ["A view always doubles memory use", "A copy always changes the original", "They cannot contain numeric values", "A view can share memory with the original array"],
+    "correctAnswerIndex": 3,
+    "explanation": "A NumPy view can reference the same underlying memory as the original array, so changes through the view may affect the original. A copy owns separate data.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-06",
+    "question": "Why might np.nanmean be used instead of np.mean on an array containing NaN values?",
+    "options": ["It converts every value to a string", "It ignores NaN values when calculating the mean", "It sorts the array first", "It replaces NaN values with the maximum"],
+    "correctAnswerIndex": 1,
+    "explanation": "np.nanmean computes the mean while ignoring NaN entries, whereas np.mean generally propagates NaN and returns NaN when a participating value is NaN.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-07",
+    "question": "What does a rolling mean in a time series calculate?",
+    "options": ["One global mean that never changes", "Only the mean of missing values", "The mean of a moving window of recent observations", "A categorical encoding"],
+    "correctAnswerIndex": 2,
+    "explanation": "A rolling mean calculates an aggregate over a sliding window, such as the previous seven observations, to smooth short-term variation.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-08",
+    "question": "Why should dates usually be parsed into a datetime type before time-based analysis?",
+    "options": ["Strings are always more accurate for sorting dates", "Parsing removes all time zones", "Datetime values cannot be filtered", "Datetime values support chronological operations and time components"],
+    "correctAnswerIndex": 3,
+    "explanation": "Datetime types support chronological sorting, date arithmetic, resampling, and extraction of components such as month or weekday.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-09",
+    "question": "What is a potential issue with silently dropping every row containing any missing value?",
+    "options": ["It always improves statistical power", "It can discard substantial or systematically missing data", "It guarantees unbiased results", "It converts missing values into valid measurements"],
+    "correctAnswerIndex": 1,
+    "explanation": "Dropping all incomplete rows can reduce the sample size and may introduce bias if missingness is related to the observations or groups being studied.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-10",
+    "question": "What does a percentile describe?",
+    "options": ["The percentage of columns in a table", "The number of missing rows", "A value below which a specified percentage of observations fall", "A guaranteed probability of causation"],
+    "correctAnswerIndex": 2,
+    "explanation": "The pth percentile is a value at or below which approximately p percent of observations lie, subject to the chosen interpolation convention.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-11",
+    "question": "Why can a truncated y-axis make a bar chart misleading?",
+    "options": ["It can visually exaggerate differences between bar heights", "It always hides the category labels", "It removes the need for units", "It guarantees the bars are proportional to area"],
+    "correctAnswerIndex": 0,
+    "explanation": "Because bar length is commonly compared from a baseline, cutting off the baseline can make small numerical differences look much larger than they are.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-12",
+    "question": "What is overplotting in a scatter plot?",
+    "options": ["The use of too few points to show a relationship", "The automatic sorting of x values", "A chart with no axes", "Points overlap so heavily that density or patterns become hard to see"],
+    "correctAnswerIndex": 3,
+    "explanation": "Overplotting occurs when many points overlap, obscuring the number and distribution of observations. Transparency, smaller markers, sampling, or density plots can help.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-13",
+    "question": "What does NumPy's random default_rng provide?",
+    "options": ["A modern random number generator object", "A DataFrame grouping method", "A deterministic result with no seed option", "A chart formatting engine"],
+    "correctAnswerIndex": 0,
+    "explanation": "np.random.default_rng creates a Generator object for random sampling and distributions. Supplying a seed makes its sequence reproducible for that generator.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-14",
+    "question": "Why is a colorbar useful in a heatmap when colors encode numeric magnitude?",
+    "options": ["It labels the numeric meaning of the color scale", "It removes all missing values", "It converts a heatmap into a table", "It proves that two variables are causal"],
+    "correctAnswerIndex": 0,
+    "explanation": "A colorbar maps colors to numeric values, allowing viewers to interpret what light, dark, or intermediate colors mean in the heatmap.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-15",
+    "question": "What is the purpose of error bars in a data visualization?",
+    "options": ["They always show the full range of raw data", "They can communicate variability or uncertainty around an estimate", "They turn categorical data into numeric data", "They eliminate sampling error"],
+    "correctAnswerIndex": 1,
+    "explanation": "Error bars can show a chosen measure of spread or uncertainty, such as standard deviation or a confidence interval. Their meaning should be stated clearly.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-16",
+    "question": "What does a group-wise transform help you do when creating a normalized value within each group?",
+    "options": ["Return one unrelated value for the whole table", "Align group-level calculations back to each original row", "Delete the grouping column", "Prevent all aggregation"],
+    "correctAnswerIndex": 1,
+    "explanation": "transform returns a result with the same index and shape as the original data, making it suitable for operations such as subtracting each group's mean from its member rows.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-17",
+    "question": "Why should a visualization use a color palette that remains distinguishable for color-vision deficiencies?",
+    "options": ["It improves access to encoded differences for more viewers", "It makes every chart statistically significant", "It removes the need for labels", "It guarantees a linear relationship"],
+    "correctAnswerIndex": 0,
+    "explanation": "A color-vision-accessible palette helps more viewers distinguish categories or values. Labels, symbols, and patterns can provide additional non-color cues.",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "da-hard-18",
+    "question": "What is the main statistical risk of treating a strong correlation as proof of causation?",
+    "options": ["Correlation cannot be calculated for numbers", "The variables must have different units", "A third variable or coincidence may explain the association", "Causation always produces zero correlation"],
+    "correctAnswerIndex": 2,
+    "explanation": "An association can result from confounding, reverse direction, selection effects, or coincidence. Establishing causation generally requires stronger design or evidence than correlation alone.",
+    "difficulty": "Hard"
+  }
+]
