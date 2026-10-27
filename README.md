@@ -16,6 +16,20 @@ QuizLab AI is a focused, no-sign-up quiz app for beginner-to-intermediate self-l
 - Keyboard-operable controls, accessible radio semantics, visible focus states, progress announcements, and non-color-only review indicators.
 - No sign-up, authentication, backend, database, cookies, or browser storage. Quiz state is kept only in memory for the current session.
 
+## Screenshots
+
+| Home | Selection |
+| --- | --- |
+| ![Home screen](docs/screenshots/home.png) | ![Selection screen](docs/screenshots/selection.png) |
+
+| Quiz | Results |
+| --- | --- |
+| ![Quiz screen](docs/screenshots/quiz.png) | ![Results screen](docs/screenshots/results.png) |
+
+| Review |
+| --- |
+| ![Review screen](docs/screenshots/review.png) |
+
 ## Live demo
 
 Try the app here: [https://quizlab-ai-omega.vercel.app](https://quizlab-ai-omega.vercel.app)
