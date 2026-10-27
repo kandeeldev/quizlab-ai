@@ -2,6 +2,8 @@
 
 QuizLab AI is a focused, no-sign-up quiz app for beginner-to-intermediate self-learners studying Python, data analysis, machine learning, and deep learning. It presents one question at a time, scores the completed quiz, and explains every answer during review.
 
+**Live demo:** [https://quizlab-ai-omega.vercel.app](https://quizlab-ai-omega.vercel.app)
+
 ## Key features
 
 - Four categories: Python, Data Analysis, Machine Learning, and Deep Learning.
@@ -14,14 +16,18 @@ QuizLab AI is a focused, no-sign-up quiz app for beginner-to-intermediate self-l
 - Keyboard-operable controls, accessible radio semantics, visible focus states, progress announcements, and non-color-only review indicators.
 - No sign-up, authentication, backend, database, cookies, or browser storage. Quiz state is kept only in memory for the current session.
 
+## Live demo
+
+Try the app here: [https://quizlab-ai-omega.vercel.app](https://quizlab-ai-omega.vercel.app)
+
+The app is deployed on Vercel directly from the `main` branch of this repository.
+
 ## Setup and installation
 
 ### Clone the project
 
-Replace `<repository-url>` with the URL of the project repository when one is available:
-
 ```bash
-git clone <repository-url>
+git clone https://github.com/kandeeldev/quizlab-ai.git
 cd quizlab-ai
 ```
 
@@ -109,19 +115,6 @@ quizlab-ai/
 - `src/components/` contains the five screens: Home, Selection, Quiz, Results, and Review.
 - `src/data/` contains the static question banks.
 
-## Adding a new category
-
-1. Add a JSON file under `src/data/`, following the question schema below.
-2. Import the new JSON file and register it in the `questionBank` map in `src/App.tsx`.
-3. Add the category name to the `categories` array and `Category` type source in `src/types/quiz.ts`.
-4. Add the category's short label and description to `categoryDetails` in `src/components/SelectionScreen.tsx`.
-5. Confirm that the category is available at all supported difficulty levels and run:
-
-```bash
-npm run lint
-npm run build
-```
-
 ## Usage
 
 1. Select **Start a quiz** on the Home screen.
@@ -159,18 +152,15 @@ Example:
 }
 ```
 
-## Screenshots
+## Adding a new category
 
-> **Placeholder — screenshots will be added after the final screenshot capture pass.**
+1. Add a JSON file under `src/data/`, following the question schema above.
+2. Import the new JSON file and register it in the `questionBank` map in `src/App.tsx`.
+3. Add the category name to the `categories` array and `Category` type source in `src/types/quiz.ts`.
+4. Add the category's short label and description to `categoryDetails` in `src/components/SelectionScreen.tsx`.
+5. Confirm that the category is available at all supported difficulty levels and run:
 
-- Home screen: `[Screenshot placeholder]`
-- Selection screen: `[Screenshot placeholder]`
-- Quiz screen: `[Screenshot placeholder]`
-- Results screen: `[Screenshot placeholder]`
-- Review screen: `[Screenshot placeholder]`
-
-## Live demo
-
-> **Placeholder — live demo URL will be added after deployment.**
->
-> Live demo: `[Vercel deployment URL placeholder]`
+```bash
+npm run lint
+npm run build
+```
